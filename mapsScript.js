@@ -7,6 +7,8 @@ $(function() {
 		    zoom:15
 		};
 		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker = new google.maps.Marker({position:mapProp.center});
+		marker.setMap(map);
 	})
 
 	$('#latitude').keypress(function(e){
